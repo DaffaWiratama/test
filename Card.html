@@ -37,7 +37,7 @@ body {
   align-items: center;
   text-align: center;
   display: flex;
-  font-size: 1.5em;
+  font-size: 0.8em;
   color: rgb(88 199 250 / 0%);
   cursor: pointer;
   font-family: cursive;
@@ -88,6 +88,12 @@ body {
   animation: spin 2.5s linear infinite;
 }
 
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
 @keyframes spin {
   0% {
     --rotate: 0deg;
@@ -104,6 +110,12 @@ a {
   font-weight: bold;
   margin-top: 2rem;
 }
+
+@media screen and (max-width:574px){
+  .button a{
+     font-size: .5rem;
+  }
+}
     </style>
   </head>
   <body>
@@ -112,6 +124,12 @@ a {
         Happy Valentine's Day<br>
         I want to say thank you for being a part of my life. Even if it's just a small memory<br>
       </p>
+    </div>
+    <div class="button">
+        <button>
+            <a href="flower.html">Go to a place</a>
+        </button>
+        
     </div>
   </body>
 </html>
